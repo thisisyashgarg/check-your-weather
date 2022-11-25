@@ -18,7 +18,8 @@ app.post('/', (req, res) =>{
 const city = req.body.cityName;
 const key = process.env.APIKEY;
 const units = 'metric';
-const uri = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=" + units + "&appid=" + key +"" ; 
+const uri = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=" + units + "&appid=" + key +"" ;
+
 const weatherData = fetch(uri)
 .then((data) => data.json())
 .then((data) => {
@@ -32,10 +33,6 @@ const weatherData = fetch(uri)
 });
     
 });
-
-
-
-
 
 
 app.listen(3000, () => console.log('listening on 3000'));
