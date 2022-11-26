@@ -6,7 +6,7 @@
 
 
 ### 2. Get weather report
-![alt text](/images/Screenshot%202022-11-24%20at%206.18.00%20PM.png?raw=true "Title")
+![alt text](/images/output.png?raw=true "Title")
 
 
 
