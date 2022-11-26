@@ -16,7 +16,7 @@ app.get('/', (req, res) =>{
 
 app.post('/', (req, res) =>{
 const units = 'metric';
-const uri = "https://api.openweathermap.org/data/2.5/weather?q=" + req.body.cityName + "&units=" + units + "&appid=" + process.env.APIKEY +"" ;
+const uri = `https://api.openweathermap.org/data/2.5/weather?q=${req.body.cityName}&units=${units}&appid=${process.env.APIKEY}` ;
 
 axios(uri)
 
