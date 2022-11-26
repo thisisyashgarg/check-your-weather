@@ -24,7 +24,6 @@ axios(uri)
     const cityName = response.data.name;
     const temperature = response.data.main.temp;
     const imageURL = 'http://openweathermap.org/img/wn/' + iconElement + '@2x.png';
-    
     res.send(
         `<h1>The weather condition is ${weatherDescription}<h1/>
          <h2>The temperature of ${cityName} is ${temperature} degree celsius<h2/>
