@@ -18,6 +18,7 @@ const units = 'metric';
 const uri = "https://api.openweathermap.org/data/2.5/weather?q=" + req.body.cityName + "&units=" + units + "&appid=" + process.env.APIKEY +"" ;
 
 axios(uri)
+
 .then((response) => {
     const iconElement = response.data.weather[0].icon;
     const weatherDescription = response.data.weather[0].description;
@@ -30,9 +31,8 @@ axios(uri)
          <img src = ${imageURL} >`
     );
 })
-.catch((err) => res.send("<h1> 404 Error - Something went wrong - Please try again"));
+.catch(() => res.send("<h1> 404 Error - Something went wrong - Please try again"));
     
 });
 
-
-app.listen(3001, () => console.log('listening on 3001'));
+app.listen(process.env.PORT || 3001, () => console.log('listening on 3001'));
