@@ -33,7 +33,10 @@ axios(uri)
 })
 .catch((response) => {
     console.log(response);
-    res.send(`<h1>Something Went Wrong -> ${response}<h1/>`)
+    res.send(`
+    <h1> Something Went Wrong <h1/>
+    <h2> Its Not You, Its Us <h2/>
+    <h3> Please Try Again After Some Time <h3/>`)
 });
     
 });
