@@ -34,7 +34,7 @@ axios(uri)
 
     
 })
-.catch(() => res.send("<h1> 404 Error - Something went wrong - Please try again"));
+.catch((response) => res.send(response));
     
 });
 
