@@ -13,11 +13,11 @@ To use this code, you can enter a city name that you would like to get the weath
 including the description, temperature, and an image of the current weather condition. 
 
 ## Installation
--Fork this repository.
--Clone your fork.
--Run `npm install` to install any dependencies.
--Create an environment file (`.env`) with an API key.
--Run `node index.js` to run the application.
+1. Fork this repository.
+2. Clone your fork.
+3. Run `npm install` to install any dependencies.
+4. Create an environment file (`.env`) with an API key.
+5. Run `node index.js` to run the application.
 
 ## Screenshots
 
