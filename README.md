@@ -14,10 +14,9 @@ including the description, temperature, and an image of the current weather cond
 
 ## Installation
 1. Fork this repository.
-2. Clone your fork.
-3. Run `npm install` to install any dependencies.
-4. Create an environment file (`.env`) with an API key.
-5. Run `node index.js` to run the application.
+2. Run `npm install` to install any dependencies.
+3. Create an environment file (`.env`) with an API key.
+4. Run `node index.js` to run the application.
 
 ## Screenshots
 
